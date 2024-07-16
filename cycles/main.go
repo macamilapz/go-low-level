@@ -107,7 +107,7 @@ func main() {
 		}
 		if count%2 == 0 {
 			fmt.Println("Tu numero es par")
-		} else if count%2 != 0 {
+		} else {
 			fmt.Println("Tu numero no es par")
 		}
 	} else if option == 5 {
@@ -122,7 +122,7 @@ func main() {
 		}
 		if count%3 == 0 {
 			fmt.Println("Tu numero es multiplo de 3")
-		} else if count%3 != 0 {
+		} else {
 			fmt.Println("Tu numero no es multiplo de 3")
 		}
 	} else if option == 6 {
@@ -151,14 +151,15 @@ func main() {
 			panic("debes escribir un numero entero positivo")
 		}
 		for i := 1; i <= count; i++ {
-			{
-				if count%3 == 0 && count%5 == 0 {
-					fmt.Println("FizzBuzz")
-				} else if count%3 == 0 {
-					fmt.Println("Fizz")
-				} else if count%5 == 0 {
-					fmt.Println("Buzz")
-				}
+
+			if i%3 == 0 && i%5 == 0 {
+				fmt.Println("FizzBuzz")
+			} else if i%3 == 0 {
+				fmt.Println("Fizz")
+			} else if i%5 == 0 {
+				fmt.Println("Buzz")
+			} else {
+				fmt.Println(i)
 			}
 
 		}
