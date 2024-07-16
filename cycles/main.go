@@ -137,7 +137,7 @@ func main() {
 		}
 		if count%5 == 0 {
 			fmt.Println("Tu numero es multiplo de 5")
-		} else if count%5 != 0 {
+		} else {
 			fmt.Println("Tu numero no es multiplo de 5")
 		}
 	} else if option == 7 {
@@ -150,13 +150,17 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
-		if count%3 == 0 && count%5 == 0 {
-			fmt.Println("FIZZBUZZ")
-		} else if count%3 == 0 {
-			fmt.Println("FIZZ")
-		} else if count%5 == 0 {
-			fmt.Println("BUZZ")
-		}
+		for i := 1; i <= count; i++ {
+			{
+				if count%3 == 0 && count%5 == 0 {
+					fmt.Println("FizzBuzz")
+				} else if count%3 == 0 {
+					fmt.Println("Fizz")
+				} else if count%5 == 0 {
+					fmt.Println("Buzz")
+				}
+			}
 
+		}
 	}
 }
