@@ -60,6 +60,7 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
+		// TODO: Esto debería ser un salto de linea porque es una operación distinta
 		for i := 1; i <= count; i++ {
 			if i%2 == 0 {
 				fmt.Println(i)
@@ -75,6 +76,7 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
+		// TODO: Idem
 		for i := 1; i <= count; i++ {
 			if i%3 == 0 {
 				fmt.Println(i)
@@ -90,6 +92,7 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
+		// TODO: Idem
 		for i := 1; i <= count; i++ {
 			if i%5 == 0 {
 				fmt.Println(i)
@@ -105,6 +108,7 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
+		// TODO: Idem
 		if count%2 == 0 {
 			fmt.Println("Tu numero es par")
 		} else {
@@ -120,6 +124,7 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
+		// TODO: Idem
 		if count%3 == 0 {
 			fmt.Println("Tu numero es multiplo de 3")
 		} else {
@@ -135,12 +140,14 @@ func main() {
 		if err != nil {
 			panic("debes escribir un numero entero positivo")
 		}
+		// TODO: Debería haber un espacio aquí porque el if/else corresponde a otra operación, como un párrafo diferente
 		if count%5 == 0 {
 			fmt.Println("Tu numero es multiplo de 5")
 		} else {
 			fmt.Println("Tu numero no es multiplo de 5")
 		}
 	} else if option == 7 {
+		// TODO: Verificar este mensaje: ¿Es claro para el usuario?
 		fmt.Printf("fizz para multiplos de 3 y buzz para multiplos de 5: ")
 
 		in, _ := reader.ReadString('\n')
@@ -151,6 +158,7 @@ func main() {
 			panic("debes escribir un numero entero positivo")
 		}
 		for i := 1; i <= count; i++ {
+			// TODO: Eliminar este salto de linea
 
 			if i%3 == 0 && i%5 == 0 {
 				fmt.Println("FizzBuzz")
