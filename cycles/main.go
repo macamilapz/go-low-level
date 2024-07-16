@@ -161,7 +161,6 @@ func main() {
 			} else {
 				fmt.Println(i)
 			}
-
 		}
 	}
 }
