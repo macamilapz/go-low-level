@@ -1,0 +1,1 @@
+rm nombre-del-archivo
